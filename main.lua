@@ -1,5 +1,5 @@
 -- Made by RooRay aka PVPPro9575
--- Please check the README before using this script!
+-- Please check the README on the github page before using this script! github.com/RooRay/Script-Launcher/blob/main/main.lua
 
 -- Instances:
 
