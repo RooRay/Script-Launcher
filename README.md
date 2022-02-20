@@ -10,4 +10,6 @@ If there's any scripts you want added, feel free to shoot me a DM on the linked 
 Installation is pretty easy, either use the loadstring `loadstring(game:HttpGet("https://raw.githubusercontent.com/RooRay/Script-Launcher/main/main.lua"))();` or just copy-paste the code from the main.lua file!
 
 
-Please also consider donating to fund development and motivate me to make cool new stuff! https://buymeacoffee.com/rooray
+Please also consider donating to fund development and motivate me to make cool new stuff:
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/V7V76P9NW)
