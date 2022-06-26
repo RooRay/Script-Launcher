@@ -1,17 +1,18 @@
 # Script-Launcher
 
-# This currently doesn't work and is in the process of being rewritten, please do not submit any GitHub issues regarding it not working while I fix it!
+###### This currently doesn't work and is in the process of being rewritten, please do not submit any GitHub issues regarding it not working while I fix it! 
+###### The rewritten code will rely on the Synapse X Filesystem API for configuration, please ensure you use an executor that is compatible! (Synapse X is recommended)
 
-Hi! This is an exploit script launcher for Roblox! The code is completely open (as it uses a lot of scripts from other people) and is unobfuscated/unencrypted etc.
-While this should work with any executor compatible with Roblox I've only tested it with Synapse X so I'd recommend you use that.
+This is an exploit script launcher (sometimes called a "Script Hub") for Roblox! The code is completely open (as it uses a lot of scripts from other people) and is completely unobfuscated/unencrypted etc.
 
 If there's any scripts you want added, feel free to shoot me a DM on the linked twitter on my GitHub profile! Pull requests will also be considered.
 
 # Installation
 
-Installation is pretty easy, either use the loadstring `loadstring(game:HttpGet("https://raw.githubusercontent.com/RooRay/Script-Launcher/main/main.lua"))();` or just copy-paste the code from the main.lua file!
+## Recommended (ensures you always have the latest version)
 
+In your executor of choice's code editor, paste the loadstring: `loadstring(game:HttpGet("https://raw.githubusercontent.com/RooRay/Script-Launcher/main/main.lua"))();` 
 
-Please also consider donating to fund development and motivate me to make cool new stuff:
+## Alternative method (requires you to manually replace the code when there's an update)
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/V7V76P9NW)
+Paste the contents of the `main.lua` ([AKA this](https://github.com/RooRay/Script-Launcher/blob/stable/main.lua)) file in this repository into your executor of choice's editor
