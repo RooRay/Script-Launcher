@@ -3,6 +3,8 @@
 ###### This currently doesn't work and is in the process of being rewritten, please do not submit any GitHub issues regarding it not working while I fix it! 
 ###### The rewritten code will rely on the Synapse X Filesystem API for configuration, please ensure you use an executor that is compatible! (Synapse X is recommended)
 
+## Pull Requests to this branch are not accepted, please make Pull Requests for code changes in the `prerelease` branch!
+
 This is an exploit script launcher (sometimes called a "Script Hub") for Roblox! The code is completely open (as it uses a lot of scripts from other people) and is completely unobfuscated/unencrypted etc.
 
 If there's any scripts you want added, feel free to shoot me a DM on the linked twitter on my GitHub profile! Pull requests will also be considered.
