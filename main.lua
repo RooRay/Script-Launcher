@@ -1,329 +1,523 @@
 -- Made by RooRay aka PVPPro9575
 -- Please check the README on the github page before using this script! github.com/RooRay/Script-Launcher/blob/main/README.md
--- This version of the script is version 1.10
+-- This version of the script is version v2.0.0-beta 2
 
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
-local Open = Instance.new("TextButton")
-local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
-local ScrollingFrame = Instance.new("ScrollingFrame")
-local DarkHub = Instance.new("TextButton")
-local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
-local InfiniteYield = Instance.new("TextButton")
-local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
-local OwlHub = Instance.new("TextButton")
-local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
-local Header = Instance.new("TextLabel")
-local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
-local Section1 = Instance.new("TextLabel")
-local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
-local Section2 = Instance.new("TextLabel")
-local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
-local Title = Instance.new("TextLabel")
-local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
-local EclipseUI = Instance.new("TextButton")
-local UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint")
-local ntiAFK = Instance.new("TextButton")
-local UIAspectRatioConstraint_10 = Instance.new("UIAspectRatioConstraint")
-local Solaris = Instance.new("TextButton")
-local UIAspectRatioConstraint_11 = Instance.new("UIAspectRatioConstraint")
-local WorkataPizzaPlace = Instance.new("TextButton")
-local UIAspectRatioConstraint_12 = Instance.new("UIAspectRatioConstraint")
-local PlagueFuckerV3 = Instance.new("TextButton")
-local UIAspectRatioConstraint_13 = Instance.new("UIAspectRatioConstraint")
-local UltimateAdmin = Instance.new("TextButton")
-local UIAspectRatioConstraint_14 = Instance.new("UIAspectRatioConstraint")
-local VynixiusJailbreak = Instance.new("TextButton")
-local UIAspectRatioConstraint_15 = Instance.new("UIAspectRatioConstraint")
-local RagdollEngineGUI = Instance.new("TextButton")
-local UIAspectRatioConstraint_16 = Instance.new("UIAspectRatioConstraint")
-local UIAspectRatioConstraint_17 = Instance.new("UIAspectRatioConstraint")
+local LoadingMenu = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local RoundyBoi = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local LoadingBarOuter = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local LoadingBarInner = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Percent = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local MainMenu = Instance.new("Frame")
+local RoundyBoi_2 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local Scripts = Instance.new("ScrollingFrame")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local TextButton_5 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Settings = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextButton_6 = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local TextButton_7 = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local TextButton_8 = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local TextButton_9 = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local TextButton_10 = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextButton_11 = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
 
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Open.Name = "Open"
-Open.Parent = ScreenGui
-Open.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-Open.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Open.BorderSizePixel = 2
-Open.Position = UDim2.new(0, 0, 0.575163424, 0)
-Open.Size = UDim2.new(0.121212125, 0, 0.0601684712, 0)
-Open.Font = Enum.Font.Ubuntu
-Open.Text = "Toggle Launcher"
-Open.TextColor3 = Color3.fromRGB(255, 255, 255)
-Open.TextScaled = true
-Open.TextSize = 14.000
-Open.TextWrapped = true
+LoadingMenu.Name = "LoadingMenu"
+LoadingMenu.Parent = ScreenGui
+LoadingMenu.Active = true
+LoadingMenu.BackgroundColor3 = Color3.fromRGB(44, 47, 51)
+LoadingMenu.Position = UDim2.new(0.3046875, 0, 0.198555946, 0)
+LoadingMenu.Size = UDim2.new(0, 750, 0, 500)
 
-UIAspectRatioConstraint.Parent = Open
-UIAspectRatioConstraint.AspectRatio = 4.000
+TextLabel.Parent = LoadingMenu
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.131479174, 0, 0.183999985, 0)
+TextLabel.Rotation = -2.000
+TextLabel.Size = UDim2.new(0, 550, 0, 203)
+TextLabel.Font = Enum.Font.Roboto
+TextLabel.Text = "RooRay"
+TextLabel.TextColor3 = Color3.fromRGB(216, 240, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 100.000
+TextLabel.TextWrapped = true
 
-ScrollingFrame.Parent = ScreenGui
-ScrollingFrame.Active = true
-ScrollingFrame.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ScrollingFrame.BorderSizePixel = 5
-ScrollingFrame.LayoutOrder = 1
-ScrollingFrame.Position = UDim2.new(0.349999994, 0, 0.248796627, 0)
-ScrollingFrame.Size = UDim2.new(0.340000004, 0, 0.466907352, 0)
-ScrollingFrame.ScrollBarThickness = 11
+RoundyBoi.CornerRadius = UDim.new(0, 20)
+RoundyBoi.Name = "RoundyBoi"
+RoundyBoi.Parent = LoadingMenu
 
-DarkHub.Name = "Dark Hub"
-DarkHub.Parent = ScrollingFrame
-DarkHub.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-DarkHub.BorderColor3 = Color3.fromRGB(255, 255, 255)
-DarkHub.BorderSizePixel = 0
-DarkHub.Position = UDim2.new(0.681221545, 0, 0.0667868853, 0)
-DarkHub.Size = UDim2.new(0.267379671, 0, 0.0773195848, 0)
-DarkHub.Font = Enum.Font.SourceSans
-DarkHub.Text = "Dark Hub"
-DarkHub.TextColor3 = Color3.fromRGB(112, 112, 112)
-DarkHub.TextScaled = true
-DarkHub.TextSize = 14.000
-DarkHub.TextWrapped = true
+TextLabel_2.Parent = LoadingMenu
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0, 0, 0.810435653, 0)
+TextLabel_2.Size = UDim2.new(0, 749, 0, 38)
+TextLabel_2.Font = Enum.Font.Ubuntu
+TextLabel_2.Text = "Loading required assets, please wait..."
+TextLabel_2.TextColor3 = Color3.fromRGB(153, 170, 181)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
 
-UIAspectRatioConstraint_2.Parent = DarkHub
-UIAspectRatioConstraint_2.AspectRatio = 5.000
+TextLabel_3.Parent = LoadingMenu
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0, 0, 0.699999988, 0)
+TextLabel_3.Size = UDim2.new(0, 750, 0, 38)
+TextLabel_3.Font = Enum.Font.Ubuntu
+TextLabel_3.Text = "Thanks for using my Script Launcher!"
+TextLabel_3.TextColor3 = Color3.fromRGB(153, 170, 181)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
 
-InfiniteYield.Name = "Infinite Yield"
-InfiniteYield.Parent = ScrollingFrame
-InfiniteYield.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-InfiniteYield.BorderColor3 = Color3.fromRGB(255, 255, 255)
-InfiniteYield.BorderSizePixel = 0
-InfiniteYield.Position = UDim2.new(0.0460037738, 0, 0.0671554133, 0)
-InfiniteYield.Size = UDim2.new(0.267379671, 0, 0.0773195848, 0)
-InfiniteYield.Font = Enum.Font.SourceSans
-InfiniteYield.Text = "Infinite Yield"
-InfiniteYield.TextColor3 = Color3.fromRGB(112, 112, 112)
-InfiniteYield.TextScaled = true
-InfiniteYield.TextSize = 14.000
-InfiniteYield.TextWrapped = true
+LoadingBarOuter.Name = "LoadingBarOuter"
+LoadingBarOuter.Parent = LoadingMenu
+LoadingBarOuter.BackgroundColor3 = Color3.fromRGB(139, 139, 139)
+LoadingBarOuter.Position = UDim2.new(0, 0, 0.899999976, 0)
+LoadingBarOuter.Size = UDim2.new(0, 750, 0, 50)
 
-UIAspectRatioConstraint_3.Parent = InfiniteYield
-UIAspectRatioConstraint_3.AspectRatio = 5.000
+UICorner.CornerRadius = UDim.new(0, 20)
+UICorner.Parent = LoadingBarOuter
 
-OwlHub.Name = "Owl Hub"
-OwlHub.Parent = ScrollingFrame
-OwlHub.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-OwlHub.BorderColor3 = Color3.fromRGB(255, 255, 255)
-OwlHub.BorderSizePixel = 0
-OwlHub.Position = UDim2.new(0.356374741, 0, 0.0671554282, 0)
-OwlHub.Size = UDim2.new(0.267379671, 0, 0.0773195848, 0)
-OwlHub.Font = Enum.Font.SourceSans
-OwlHub.Text = "Owl Hub"
-OwlHub.TextColor3 = Color3.fromRGB(112, 112, 112)
-OwlHub.TextScaled = true
-OwlHub.TextSize = 14.000
-OwlHub.TextWrapped = true
+LoadingBarInner.Name = "LoadingBarInner"
+LoadingBarInner.Parent = LoadingBarOuter
+LoadingBarInner.BackgroundColor3 = Color3.fromRGB(247, 150, 31)
+LoadingBarInner.BackgroundTransparency = 1.000
+LoadingBarInner.BorderColor3 = Color3.fromRGB(247, 150, 31)
+LoadingBarInner.Size = UDim2.new(0, 0, 1, 0)
 
-UIAspectRatioConstraint_4.Parent = OwlHub
-UIAspectRatioConstraint_4.AspectRatio = 5.000
+UICorner_2.CornerRadius = UDim.new(0, 20)
+UICorner_2.Parent = LoadingBarInner
 
-Header.Name = "Header"
-Header.Parent = ScrollingFrame
-Header.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Header.BackgroundTransparency = 1.000
-Header.BorderSizePixel = 0
-Header.Position = UDim2.new(-0.00477717072, 0, 0.0329309478, 0)
-Header.Size = UDim2.new(0.973262012, 0, 0.0670103058, 0)
-Header.Font = Enum.Font.SourceSans
-Header.Text = "Version 1.10, suggest new stuff on the GitHub page!"
-Header.TextColor3 = Color3.fromRGB(255, 255, 255)
-Header.TextScaled = true
-Header.TextSize = 14.000
-Header.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-Header.TextWrapped = true
+Percent.Name = "Percent"
+Percent.Parent = LoadingBarOuter
+Percent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Percent.BackgroundTransparency = 1.000
+Percent.Position = UDim2.new(0.00666666683, 0, 0, 0)
+Percent.Size = UDim2.new(0, 749, 0, 50)
+Percent.Font = Enum.Font.Ubuntu
+Percent.Text = "0%"
+Percent.TextColor3 = Color3.fromRGB(0, 0, 0)
+Percent.TextScaled = true
+Percent.TextSize = 14.000
+Percent.TextWrapped = true
 
-UIAspectRatioConstraint_5.Parent = Header
-UIAspectRatioConstraint_5.AspectRatio = 21.000
+TextLabel_4.Parent = LoadingMenu
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0, 0, -0.001564331, 0)
+TextLabel_4.Size = UDim2.new(0, 750, 0, 30)
+TextLabel_4.Font = Enum.Font.Ubuntu
+TextLabel_4.Text = "This is a prerelease and some parts of this script may be changed in the future - v2.0.0-beta 2"
+TextLabel_4.TextColor3 = Color3.fromRGB(153, 170, 181)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
 
-Section1.Name = "Section1"
-Section1.Parent = ScrollingFrame
-Section1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Section1.BackgroundTransparency = 1.000
-Section1.Position = UDim2.new(-0.00495548686, 0, 0.0483168811, 0)
-Section1.Size = UDim2.new(0.998217344, 0, 0.0695876256, 0)
-Section1.Font = Enum.Font.Sarpanch
-Section1.Text = "- - Popular - -"
-Section1.TextColor3 = Color3.fromRGB(170, 170, 170)
-Section1.TextScaled = true
-Section1.TextSize = 14.000
-Section1.TextWrapped = true
+MainMenu.Name = "MainMenu"
+MainMenu.Parent = ScreenGui
+MainMenu.BackgroundColor3 = Color3.fromRGB(35, 39, 42)
+MainMenu.BorderColor3 = Color3.fromRGB(35, 39, 42)
+MainMenu.Position = UDim2.new(0.304498136, 0, 0.198555961, 0)
+MainMenu.Size = UDim2.new(0, 750, 0, 500)
+MainMenu.Visible = false
 
-UIAspectRatioConstraint_6.Parent = Section1
-UIAspectRatioConstraint_6.AspectRatio = 20.741
+RoundyBoi_2.CornerRadius = UDim.new(0, 20)
+RoundyBoi_2.Name = "RoundyBoi"
+RoundyBoi_2.Parent = MainMenu
 
-Section2.Name = "Section2"
-Section2.Parent = ScrollingFrame
-Section2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Section2.BackgroundTransparency = 1.000
-Section2.Position = UDim2.new(0.000998167787, 0, 0.0943417251, 0)
-Section2.Size = UDim2.new(0.998217344, 0, 0.0695876256, 0)
-Section2.Font = Enum.Font.Sarpanch
-Section2.Text = "- - All Scripts  - -"
-Section2.TextColor3 = Color3.fromRGB(170, 170, 170)
-Section2.TextScaled = true
-Section2.TextSize = 14.000
-Section2.TextWrapped = true
+TextButton.Parent = MainMenu
+TextButton.BackgroundColor3 = Color3.fromRGB(99, 106, 115)
+TextButton.BackgroundTransparency = 0.750
+TextButton.Position = UDim2.new(0.681333363, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 159, 0, 50)
+TextButton.Font = Enum.Font.Ubuntu
+TextButton.Text = "Settings"
+TextButton.TextColor3 = Color3.fromRGB(153, 170, 181)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
 
-UIAspectRatioConstraint_7.Parent = Section2
-UIAspectRatioConstraint_7.AspectRatio = 20.741
+UICorner_3.Parent = TextButton
 
-Title.Name = "Title"
-Title.Parent = ScrollingFrame
-Title.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Title.BorderColor3 = Color3.fromRGB(50, 50, 50)
-Title.BorderSizePixel = 0
-Title.Position = UDim2.new(0.000570423028, 0, 0, 0)
-Title.Size = UDim2.new(0.991087317, 0, 0.141752571, 0)
-Title.Font = Enum.Font.Ubuntu
-Title.Text = "RooRay's Script Launcher"
-Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title.TextScaled = true
-Title.TextSize = 14.000
-Title.TextWrapped = true
+TextButton_2.Parent = MainMenu
+TextButton_2.BackgroundColor3 = Color3.fromRGB(99, 106, 115)
+TextButton_2.BackgroundTransparency = 0.750
+TextButton_2.Position = UDim2.new(0.893333375, 0, 0, 0)
+TextButton_2.Size = UDim2.new(0, 80, 0, 50)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "X"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
 
-UIAspectRatioConstraint_8.Parent = Title
-UIAspectRatioConstraint_8.AspectRatio = 10.109
+UICorner_4.Parent = TextButton_2
 
-EclipseUI.Name = "Eclipse UI"
-EclipseUI.Parent = ScrollingFrame
-EclipseUI.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-EclipseUI.BorderColor3 = Color3.fromRGB(255, 255, 255)
-EclipseUI.BorderSizePixel = 0
-EclipseUI.Position = UDim2.new(0.686569154, 0, 0.124139771, 0)
-EclipseUI.Size = UDim2.new(0.267379671, 0, 0.0773195848, 0)
-EclipseUI.Font = Enum.Font.SourceSans
-EclipseUI.Text = "Eclipse UI"
-EclipseUI.TextColor3 = Color3.fromRGB(112, 112, 112)
-EclipseUI.TextScaled = true
-EclipseUI.TextSize = 14.000
-EclipseUI.TextWrapped = true
+TextLabel_5.Parent = MainMenu
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.0146666663, 0, 0, 0)
+TextLabel_5.Size = UDim2.new(0, 500, 0, 50)
+TextLabel_5.Font = Enum.Font.Ubuntu
+TextLabel_5.Text = "RooRay's Script Launcher v2.0.0-beta 2"
+TextLabel_5.TextColor3 = Color3.fromRGB(153, 170, 181)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
 
-UIAspectRatioConstraint_9.Parent = EclipseUI
-UIAspectRatioConstraint_9.AspectRatio = 5.000
+Scripts.Name = "Scripts"
+Scripts.Parent = MainMenu
+Scripts.Active = true
+Scripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.BackgroundTransparency = 1.000
+Scripts.Position = UDim2.new(0, 0, 0.100000001, 0)
+Scripts.Size = UDim2.new(0, 750, 0, 450)
 
-ntiAFK.Name = "nti-AFK"
-ntiAFK.Parent = ScrollingFrame
-ntiAFK.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-ntiAFK.BorderColor3 = Color3.fromRGB(255, 255, 255)
-ntiAFK.BorderSizePixel = 0
-ntiAFK.Position = UDim2.new(0.0460037738, 0, 0.124139756, 0)
-ntiAFK.Size = UDim2.new(0.267379671, 0, 0.0773195848, 0)
-ntiAFK.Font = Enum.Font.SourceSans
-ntiAFK.Text = "Anti-AFK"
-ntiAFK.TextColor3 = Color3.fromRGB(112, 112, 112)
-ntiAFK.TextScaled = true
-ntiAFK.TextSize = 14.000
-ntiAFK.TextWrapped = true
+TextButton_3.Parent = Scripts
+TextButton_3.BackgroundColor3 = Color3.fromRGB(99, 106, 115)
+TextButton_3.BackgroundTransparency = 0.750
+TextButton_3.Position = UDim2.new(0.0533333868, 0, 0.0299999975, 0)
+TextButton_3.Size = UDim2.new(0, 200, 0, 50)
+TextButton_3.Font = Enum.Font.Ubuntu
+TextButton_3.Text = "DarkHub"
+TextButton_3.TextColor3 = Color3.fromRGB(153, 170, 181)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
 
-UIAspectRatioConstraint_10.Parent = ntiAFK
-UIAspectRatioConstraint_10.AspectRatio = 5.000
+UICorner_5.Parent = TextButton_3
 
-Solaris.Name = "Solaris"
-Solaris.Parent = ScrollingFrame
-Solaris.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Solaris.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Solaris.BorderSizePixel = 0
-Solaris.Position = UDim2.new(0.363504857, 0, 0.124139771, 0)
-Solaris.Size = UDim2.new(0.267379671, 0, 0.0773195848, 0)
-Solaris.Font = Enum.Font.SourceSans
-Solaris.Text = "Solaris"
-Solaris.TextColor3 = Color3.fromRGB(112, 112, 112)
-Solaris.TextScaled = true
-Solaris.TextSize = 14.000
-Solaris.TextWrapped = true
+TextButton_4.Parent = Scripts
+TextButton_4.BackgroundColor3 = Color3.fromRGB(99, 106, 115)
+TextButton_4.BackgroundTransparency = 0.750
+TextButton_4.Position = UDim2.new(0.366666734, 0, 0.0299999975, 0)
+TextButton_4.Size = UDim2.new(0, 200, 0, 50)
+TextButton_4.Font = Enum.Font.Ubuntu
+TextButton_4.Text = "Solaris"
+TextButton_4.TextColor3 = Color3.fromRGB(153, 170, 181)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
 
-UIAspectRatioConstraint_11.Parent = Solaris
-UIAspectRatioConstraint_11.AspectRatio = 5.000
+UICorner_6.Parent = TextButton_4
 
-WorkataPizzaPlace.Name = "Work at a Pizza Place"
-WorkataPizzaPlace.Parent = ScrollingFrame
-WorkataPizzaPlace.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-WorkataPizzaPlace.BorderColor3 = Color3.fromRGB(255, 255, 255)
-WorkataPizzaPlace.BorderSizePixel = 0
-WorkataPizzaPlace.Position = UDim2.new(0.686569154, 0, 0.156655103, 0)
-WorkataPizzaPlace.Size = UDim2.new(0.267379671, 0, 0.0773195848, 0)
-WorkataPizzaPlace.Font = Enum.Font.SourceSans
-WorkataPizzaPlace.Text = "Work at a Pizza Place"
-WorkataPizzaPlace.TextColor3 = Color3.fromRGB(112, 112, 112)
-WorkataPizzaPlace.TextScaled = true
-WorkataPizzaPlace.TextSize = 14.000
-WorkataPizzaPlace.TextWrapped = true
+TextButton_5.Parent = Scripts
+TextButton_5.BackgroundColor3 = Color3.fromRGB(99, 106, 115)
+TextButton_5.BackgroundTransparency = 0.750
+TextButton_5.Position = UDim2.new(0.681333423, 0, 0.0299999975, 0)
+TextButton_5.Size = UDim2.new(0, 200, 0, 50)
+TextButton_5.Font = Enum.Font.Ubuntu
+TextButton_5.Text = "EclipseUI"
+TextButton_5.TextColor3 = Color3.fromRGB(153, 170, 181)
+TextButton_5.TextScaled = true
+TextButton_5.TextSize = 14.000
+TextButton_5.TextWrapped = true
 
-UIAspectRatioConstraint_12.Parent = WorkataPizzaPlace
-UIAspectRatioConstraint_12.AspectRatio = 5.000
+UICorner_7.Parent = TextButton_5
 
-PlagueFuckerV3.Name = "Plague Fucker V3"
-PlagueFuckerV3.Parent = ScrollingFrame
-PlagueFuckerV3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-PlagueFuckerV3.BorderColor3 = Color3.fromRGB(255, 255, 255)
-PlagueFuckerV3.BorderSizePixel = 0
-PlagueFuckerV3.Position = UDim2.new(0.0460037738, 0, 0.156655088, 0)
-PlagueFuckerV3.Size = UDim2.new(0.267379671, 0, 0.0773195848, 0)
-PlagueFuckerV3.Font = Enum.Font.SourceSans
-PlagueFuckerV3.Text = "Plague Fucker V3"
-PlagueFuckerV3.TextColor3 = Color3.fromRGB(112, 112, 112)
-PlagueFuckerV3.TextScaled = true
-PlagueFuckerV3.TextSize = 14.000
-PlagueFuckerV3.TextWrapped = true
+Settings.Name = "Settings"
+Settings.Parent = MainMenu
+Settings.Active = true
+Settings.BackgroundColor3 = Color3.fromRGB(35, 39, 42)
+Settings.Position = UDim2.new(0, 0, 0.100000001, 0)
+Settings.Size = UDim2.new(0, 750, 0, 434)
+Settings.Visible = false
 
-UIAspectRatioConstraint_13.Parent = PlagueFuckerV3
-UIAspectRatioConstraint_13.AspectRatio = 5.000
+UICorner_8.Parent = Settings
 
-UltimateAdmin.Name = "Ultimate Admin"
-UltimateAdmin.Parent = ScrollingFrame
-UltimateAdmin.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-UltimateAdmin.BorderColor3 = Color3.fromRGB(255, 255, 255)
-UltimateAdmin.BorderSizePixel = 0
-UltimateAdmin.Position = UDim2.new(0.363504857, 0, 0.156655103, 0)
-UltimateAdmin.Size = UDim2.new(0.267379671, 0, 0.0773195848, 0)
-UltimateAdmin.Font = Enum.Font.SourceSans
-UltimateAdmin.Text = "Ultimate Admin"
-UltimateAdmin.TextColor3 = Color3.fromRGB(112, 112, 112)
-UltimateAdmin.TextScaled = true
-UltimateAdmin.TextSize = 14.000
-UltimateAdmin.TextWrapped = true
+TextLabel_6.Parent = Settings
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.366666675, 0, 0.143870965, 0)
+TextLabel_6.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_6.Font = Enum.Font.Ubuntu
+TextLabel_6.Text = "Theme"
+TextLabel_6.TextColor3 = Color3.fromRGB(153, 170, 181)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
 
-UIAspectRatioConstraint_14.Parent = UltimateAdmin
-UIAspectRatioConstraint_14.AspectRatio = 5.000
+TextButton_6.Parent = Settings
+TextButton_6.BackgroundColor3 = Color3.fromRGB(99, 106, 115)
+TextButton_6.BackgroundTransparency = 0.750
+TextButton_6.Position = UDim2.new(0.168000013, 0, 0.329493105, 0)
+TextButton_6.Size = UDim2.new(0, 160, 0, 50)
+TextButton_6.Font = Enum.Font.Ubuntu
+TextButton_6.Text = "Dark (Default)"
+TextButton_6.TextColor3 = Color3.fromRGB(153, 170, 181)
+TextButton_6.TextScaled = true
+TextButton_6.TextSize = 25.000
+TextButton_6.TextWrapped = true
 
-VynixiusJailbreak.Name = "Vynixius Jailbreak"
-VynixiusJailbreak.Parent = ScrollingFrame
-VynixiusJailbreak.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-VynixiusJailbreak.BorderColor3 = Color3.fromRGB(255, 255, 255)
-VynixiusJailbreak.BorderSizePixel = 0
-VynixiusJailbreak.Position = UDim2.new(0.0513513684, 0, 0.192237914, 0)
-VynixiusJailbreak.Size = UDim2.new(0.267379671, 0, 0.0773195848, 0)
-VynixiusJailbreak.Font = Enum.Font.SourceSans
-VynixiusJailbreak.Text = "Vynixius - Jailbreak"
-VynixiusJailbreak.TextColor3 = Color3.fromRGB(112, 112, 112)
-VynixiusJailbreak.TextScaled = true
-VynixiusJailbreak.TextSize = 14.000
-VynixiusJailbreak.TextWrapped = true
+UICorner_9.Parent = TextButton_6
 
-UIAspectRatioConstraint_15.Parent = VynixiusJailbreak
-UIAspectRatioConstraint_15.AspectRatio = 5.000
+TextButton_7.Parent = Settings
+TextButton_7.BackgroundColor3 = Color3.fromRGB(99, 106, 115)
+TextButton_7.BackgroundTransparency = 0.750
+TextButton_7.Position = UDim2.new(0.396000028, 0, 0.329493105, 0)
+TextButton_7.Size = UDim2.new(0, 160, 0, 50)
+TextButton_7.Font = Enum.Font.Ubuntu
+TextButton_7.Text = "Light"
+TextButton_7.TextColor3 = Color3.fromRGB(153, 170, 181)
+TextButton_7.TextScaled = true
+TextButton_7.TextSize = 25.000
+TextButton_7.TextWrapped = true
 
-RagdollEngineGUI.Name = "Ragdoll Engine GUI"
-RagdollEngineGUI.Parent = ScrollingFrame
-RagdollEngineGUI.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-RagdollEngineGUI.BorderColor3 = Color3.fromRGB(255, 255, 255)
-RagdollEngineGUI.BorderSizePixel = 0
-RagdollEngineGUI.Position = UDim2.new(0.36507684, 0, 0.192130119, 0)
-RagdollEngineGUI.Size = UDim2.new(0.267379671, 0, 0.0773195848, 0)
-RagdollEngineGUI.Font = Enum.Font.SourceSans
-RagdollEngineGUI.Text = "Ragdoll Engine GUI"
-RagdollEngineGUI.TextColor3 = Color3.fromRGB(112, 112, 112)
-RagdollEngineGUI.TextScaled = true
-RagdollEngineGUI.TextSize = 14.000
-RagdollEngineGUI.TextWrapped = true
+UICorner_10.Parent = TextButton_7
 
-UIAspectRatioConstraint_16.Parent = RagdollEngineGUI
-UIAspectRatioConstraint_16.AspectRatio = 5.000
+TextButton_8.Parent = Settings
+TextButton_8.BackgroundColor3 = Color3.fromRGB(99, 106, 115)
+TextButton_8.BackgroundTransparency = 0.750
+TextButton_8.Position = UDim2.new(0.617333353, 0, 0.329493105, 0)
+TextButton_8.Size = UDim2.new(0, 160, 0, 50)
+TextButton_8.Font = Enum.Font.Ubuntu
+TextButton_8.Text = "Ultra Dark"
+TextButton_8.TextColor3 = Color3.fromRGB(153, 170, 181)
+TextButton_8.TextScaled = true
+TextButton_8.TextSize = 14.000
+TextButton_8.TextWrapped = true
 
-UIAspectRatioConstraint_17.Parent = ScrollingFrame
-UIAspectRatioConstraint_17.AspectRatio = 1.446
+UICorner_11.Parent = TextButton_8
+
+TextLabel_7.Parent = Settings
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0, 0, 0.258041471, 0)
+TextLabel_7.Size = UDim2.new(0, 750, 0, 25)
+TextLabel_7.Font = Enum.Font.Ubuntu
+TextLabel_7.Text = "Modifies the colour scheme of the Script Launcher."
+TextLabel_7.TextColor3 = Color3.fromRGB(153, 170, 181)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
+TextLabel_8.Parent = Settings
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0.281333327, 0, 0.461843371, 0)
+TextLabel_8.Size = UDim2.new(0, 300, 0, 50)
+TextLabel_8.Font = Enum.Font.Ubuntu
+TextLabel_8.Text = "Debug Mode"
+TextLabel_8.TextColor3 = Color3.fromRGB(153, 170, 181)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+
+TextButton_9.Parent = Settings
+TextButton_9.BackgroundColor3 = Color3.fromRGB(99, 106, 115)
+TextButton_9.BackgroundTransparency = 0.750
+TextButton_9.Position = UDim2.new(0.276000053, 0, 0.698156774, 0)
+TextButton_9.Size = UDim2.new(0, 160, 0, 50)
+TextButton_9.Font = Enum.Font.Ubuntu
+TextButton_9.Text = "On"
+TextButton_9.TextColor3 = Color3.fromRGB(153, 170, 181)
+TextButton_9.TextScaled = true
+TextButton_9.TextSize = 14.000
+TextButton_9.TextWrapped = true
+
+UICorner_12.Parent = TextButton_9
+
+TextButton_10.Parent = Settings
+TextButton_10.BackgroundColor3 = Color3.fromRGB(99, 106, 115)
+TextButton_10.BackgroundTransparency = 0.750
+TextButton_10.Position = UDim2.new(0.514666736, 0, 0.698156655, 0)
+TextButton_10.Size = UDim2.new(0, 160, 0, 50)
+TextButton_10.Font = Enum.Font.Ubuntu
+TextButton_10.Text = "Off"
+TextButton_10.TextColor3 = Color3.fromRGB(153, 170, 181)
+TextButton_10.TextScaled = true
+TextButton_10.TextSize = 14.000
+TextButton_10.TextWrapped = true
+
+UICorner_13.Parent = TextButton_10
+
+TextLabel_9.Parent = Settings
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(-0.00128304039, 0, 0.574746549, 0)
+TextLabel_9.Size = UDim2.new(0, 750, 0, 25)
+TextLabel_9.Font = Enum.Font.Ubuntu
+TextLabel_9.Text = "Shows extra details in Roblox's console on what the Script Launcher is doing."
+TextLabel_9.TextColor3 = Color3.fromRGB(153, 170, 181)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+TextButton_11.Parent = Settings
+TextButton_11.BackgroundColor3 = Color3.fromRGB(99, 106, 115)
+TextButton_11.BackgroundTransparency = 0.750
+TextButton_11.Position = UDim2.new(0.633333385, 0, 0.921658993, 0)
+TextButton_11.Size = UDim2.new(0, 275, 0, 50)
+TextButton_11.Font = Enum.Font.Ubuntu
+TextButton_11.Text = "Close Settings"
+TextButton_11.TextColor3 = Color3.fromRGB(153, 170, 181)
+TextButton_11.TextScaled = true
+TextButton_11.TextSize = 14.000
+TextButton_11.TextWrapped = true
+
+UICorner_14.Parent = TextButton_11
+
+TextLabel_10.Parent = Settings
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.Position = UDim2.new(-0.00128304039, 0, 0.632350206, 0)
+TextLabel_10.Size = UDim2.new(0, 750, 0, 20)
+TextLabel_10.Font = Enum.Font.Ubuntu
+TextLabel_10.Text = "(useful for locating and reporting issues!)"
+TextLabel_10.TextColor3 = Color3.fromRGB(153, 170, 181)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextWrapped = true
+
+TextLabel_11.Parent = Settings
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.Position = UDim2.new(-0.00128304039, 0, 0, 0)
+TextLabel_11.Size = UDim2.new(0, 750, 0, 62)
+TextLabel_11.Font = Enum.Font.Ubuntu
+TextLabel_11.Text = "These settings have only been tested and confirmed working on exploits compatible with the Synapse X Filesystem API! Changes may require reinjection to be applied."
+TextLabel_11.TextColor3 = Color3.fromRGB(153, 170, 181)
+TextLabel_11.TextScaled = true
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextWrapped = true
+
+-- Scripts:
+
+local function IHGGQL_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local gui = script.Parent
+	local background = gui:WaitForChild("LoadingMenu")
+	local bar = background:WaitForChild("LoadingBarOuter")
+	local filler = bar:WaitForChild("LoadingBarInner")
+	local percentage = bar:WaitForChild("Percent")
+	local sound = Instance.new("Sound", game.Workspace)
+	sound.SoundId = "rbxassetid://9112758242"
+	
+	sound:Play()
+	wait(5)
+	sound:Stop()
+	
+	script.Parent.LoadingMenu.LoadingBarOuter.LoadingBarInner.BackgroundTransparency = 0.00
+	
+	for i = 1, 100 do
+		wait(0.02)
+		percentage.Text = i.."%"
+	
+		local formula = i/100
+	
+		filler:TweenSize(UDim2.new(formula, 0, 1, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Linear, 0.1, true)
+		
+		if i == 34 then
+			wait(0.5)
+		elseif i == 90 then
+			wait (0.7)
+		end
+	end
+	
+	script.Parent.LoadingMenu.Visible = false
+	script.Parent.MainMenu.Visible = true
+	script.Parent.MainMenu.Scripts.Visible = true
+end
+coroutine.wrap(IHGGQL_fake_script)()
+local function BJXKUSR_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Scripts.Visible = false
+		script.Parent.Parent.Settings.Visible = true
+	end)
+end
+coroutine.wrap(BJXKUSR_fake_script)()
+local function HMQRKA_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.ScreenGui:Destroy()
+	end)
+end
+coroutine.wrap(HMQRKA_fake_script)()
+local function JSWM_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		
+	end)
+end
+coroutine.wrap(JSWM_fake_script)()
+local function EAVVXSI_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		
+	end)
+end
+coroutine.wrap(EAVVXSI_fake_script)()
+local function VWBK_fake_script() -- TextButton_8.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_8)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		
+	end)
+end
+coroutine.wrap(VWBK_fake_script)()
+local function ZWHVTFF_fake_script() -- TextButton_9.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_9)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		
+	end)
+end
+coroutine.wrap(ZWHVTFF_fake_script)()
+local function XGEJJ_fake_script() -- TextButton_10.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_10)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		
+	end)
+end
+coroutine.wrap(XGEJJ_fake_script)()
+local function QBYM_fake_script() -- TextButton_11.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_11)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Scripts.Visible = true
+		script.Parent.Parent.Parent.Settings.Visible = false
+	end)
+end
+coroutine.wrap(QBYM_fake_script)()
