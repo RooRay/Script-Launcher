@@ -17,3 +17,5 @@ Should you want to commit code changes (thank you for that!) please ensure the f
 
 ## There is a high chance this code may not fully work as intended, any side effects that result in damage to your computer are your responsibility
 ##### Nothing bad *should* happen but just as a precaution and so my ass is covered lol
+
+##### All code here should still be fully exitable/closeable so if something does go wrong you can safely destroy the launcher from your Roblox instance
