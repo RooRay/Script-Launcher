@@ -1,5 +1,5 @@
 -- Made by RooRay aka PVPPro9575
--- Please check the README on the github page before using this script! github.com/RooRay/Script-Launcher/blob/main/README.md
+-- Please check the README on the github page before using this script! github.com/RooRay/Script-Launcher/blob/prerelease/README.md
 -- This version of the script is version 1.10
 
 -- Instances:
