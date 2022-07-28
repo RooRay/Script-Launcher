@@ -30,26 +30,6 @@ local TextButton_4 = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local TextButton_5 = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
-local Settings = Instance.new("Frame")
-local UICorner_8 = Instance.new("UICorner")
-local TextLabel_6 = Instance.new("TextLabel")
-local TextButton_6 = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
-local TextButton_7 = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
-local TextButton_8 = Instance.new("TextButton")
-local UICorner_11 = Instance.new("UICorner")
-local TextLabel_7 = Instance.new("TextLabel")
-local TextLabel_8 = Instance.new("TextLabel")
-local TextButton_9 = Instance.new("TextButton")
-local UICorner_12 = Instance.new("UICorner")
-local TextButton_10 = Instance.new("TextButton")
-local UICorner_13 = Instance.new("UICorner")
-local TextLabel_9 = Instance.new("TextLabel")
-local TextButton_11 = Instance.new("TextButton")
-local UICorner_14 = Instance.new("UICorner")
-local TextLabel_10 = Instance.new("TextLabel")
-local TextLabel_11 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -207,6 +187,7 @@ Scripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Scripts.BackgroundTransparency = 1.000
 Scripts.Position = UDim2.new(0, 0, 0.100000001, 0)
 Scripts.Size = UDim2.new(0, 750, 0, 450)
+Scripts.Visible = false
 
 TextButton_3.Parent = Scripts
 TextButton_3.BackgroundColor3 = Color3.fromRGB(99, 106, 115)
@@ -250,175 +231,9 @@ TextButton_5.TextWrapped = true
 
 UICorner_7.Parent = TextButton_5
 
-Settings.Name = "Settings"
-Settings.Parent = MainMenu
-Settings.Active = true
-Settings.BackgroundColor3 = Color3.fromRGB(35, 39, 42)
-Settings.Position = UDim2.new(0, 0, 0.100000001, 0)
-Settings.Size = UDim2.new(0, 750, 0, 434)
-Settings.Visible = false
-
-UICorner_8.Parent = Settings
-
-TextLabel_6.Parent = Settings
-TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.BackgroundTransparency = 1.000
-TextLabel_6.Position = UDim2.new(0.366666675, 0, 0.143870965, 0)
-TextLabel_6.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_6.Font = Enum.Font.Ubuntu
-TextLabel_6.Text = "Theme"
-TextLabel_6.TextColor3 = Color3.fromRGB(153, 170, 181)
-TextLabel_6.TextScaled = true
-TextLabel_6.TextSize = 14.000
-TextLabel_6.TextWrapped = true
-
-TextButton_6.Parent = Settings
-TextButton_6.BackgroundColor3 = Color3.fromRGB(99, 106, 115)
-TextButton_6.BackgroundTransparency = 0.750
-TextButton_6.Position = UDim2.new(0.168000013, 0, 0.329493105, 0)
-TextButton_6.Size = UDim2.new(0, 160, 0, 50)
-TextButton_6.Font = Enum.Font.Ubuntu
-TextButton_6.Text = "Dark (Default)"
-TextButton_6.TextColor3 = Color3.fromRGB(153, 170, 181)
-TextButton_6.TextScaled = true
-TextButton_6.TextSize = 25.000
-TextButton_6.TextWrapped = true
-
-UICorner_9.Parent = TextButton_6
-
-TextButton_7.Parent = Settings
-TextButton_7.BackgroundColor3 = Color3.fromRGB(99, 106, 115)
-TextButton_7.BackgroundTransparency = 0.750
-TextButton_7.Position = UDim2.new(0.396000028, 0, 0.329493105, 0)
-TextButton_7.Size = UDim2.new(0, 160, 0, 50)
-TextButton_7.Font = Enum.Font.Ubuntu
-TextButton_7.Text = "Light"
-TextButton_7.TextColor3 = Color3.fromRGB(153, 170, 181)
-TextButton_7.TextScaled = true
-TextButton_7.TextSize = 25.000
-TextButton_7.TextWrapped = true
-
-UICorner_10.Parent = TextButton_7
-
-TextButton_8.Parent = Settings
-TextButton_8.BackgroundColor3 = Color3.fromRGB(99, 106, 115)
-TextButton_8.BackgroundTransparency = 0.750
-TextButton_8.Position = UDim2.new(0.617333353, 0, 0.329493105, 0)
-TextButton_8.Size = UDim2.new(0, 160, 0, 50)
-TextButton_8.Font = Enum.Font.Ubuntu
-TextButton_8.Text = "Ultra Dark"
-TextButton_8.TextColor3 = Color3.fromRGB(153, 170, 181)
-TextButton_8.TextScaled = true
-TextButton_8.TextSize = 14.000
-TextButton_8.TextWrapped = true
-
-UICorner_11.Parent = TextButton_8
-
-TextLabel_7.Parent = Settings
-TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.BackgroundTransparency = 1.000
-TextLabel_7.Position = UDim2.new(0, 0, 0.258041471, 0)
-TextLabel_7.Size = UDim2.new(0, 750, 0, 25)
-TextLabel_7.Font = Enum.Font.Ubuntu
-TextLabel_7.Text = "Modifies the colour scheme of the Script Launcher."
-TextLabel_7.TextColor3 = Color3.fromRGB(153, 170, 181)
-TextLabel_7.TextScaled = true
-TextLabel_7.TextSize = 14.000
-TextLabel_7.TextWrapped = true
-
-TextLabel_8.Parent = Settings
-TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.BackgroundTransparency = 1.000
-TextLabel_8.Position = UDim2.new(0.281333327, 0, 0.461843371, 0)
-TextLabel_8.Size = UDim2.new(0, 300, 0, 50)
-TextLabel_8.Font = Enum.Font.Ubuntu
-TextLabel_8.Text = "Debug Mode"
-TextLabel_8.TextColor3 = Color3.fromRGB(153, 170, 181)
-TextLabel_8.TextScaled = true
-TextLabel_8.TextSize = 14.000
-TextLabel_8.TextWrapped = true
-
-TextButton_9.Parent = Settings
-TextButton_9.BackgroundColor3 = Color3.fromRGB(99, 106, 115)
-TextButton_9.BackgroundTransparency = 0.750
-TextButton_9.Position = UDim2.new(0.276000053, 0, 0.698156774, 0)
-TextButton_9.Size = UDim2.new(0, 160, 0, 50)
-TextButton_9.Font = Enum.Font.Ubuntu
-TextButton_9.Text = "On"
-TextButton_9.TextColor3 = Color3.fromRGB(153, 170, 181)
-TextButton_9.TextScaled = true
-TextButton_9.TextSize = 14.000
-TextButton_9.TextWrapped = true
-
-UICorner_12.Parent = TextButton_9
-
-TextButton_10.Parent = Settings
-TextButton_10.BackgroundColor3 = Color3.fromRGB(99, 106, 115)
-TextButton_10.BackgroundTransparency = 0.750
-TextButton_10.Position = UDim2.new(0.514666736, 0, 0.698156655, 0)
-TextButton_10.Size = UDim2.new(0, 160, 0, 50)
-TextButton_10.Font = Enum.Font.Ubuntu
-TextButton_10.Text = "Off"
-TextButton_10.TextColor3 = Color3.fromRGB(153, 170, 181)
-TextButton_10.TextScaled = true
-TextButton_10.TextSize = 14.000
-TextButton_10.TextWrapped = true
-
-UICorner_13.Parent = TextButton_10
-
-TextLabel_9.Parent = Settings
-TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.BackgroundTransparency = 1.000
-TextLabel_9.Position = UDim2.new(-0.00128304039, 0, 0.574746549, 0)
-TextLabel_9.Size = UDim2.new(0, 750, 0, 25)
-TextLabel_9.Font = Enum.Font.Ubuntu
-TextLabel_9.Text = "Shows extra details in Roblox's console on what the Script Launcher is doing."
-TextLabel_9.TextColor3 = Color3.fromRGB(153, 170, 181)
-TextLabel_9.TextScaled = true
-TextLabel_9.TextSize = 14.000
-TextLabel_9.TextWrapped = true
-
-TextButton_11.Parent = Settings
-TextButton_11.BackgroundColor3 = Color3.fromRGB(99, 106, 115)
-TextButton_11.BackgroundTransparency = 0.750
-TextButton_11.Position = UDim2.new(0.633333385, 0, 0.921658993, 0)
-TextButton_11.Size = UDim2.new(0, 275, 0, 50)
-TextButton_11.Font = Enum.Font.Ubuntu
-TextButton_11.Text = "Close Settings"
-TextButton_11.TextColor3 = Color3.fromRGB(153, 170, 181)
-TextButton_11.TextScaled = true
-TextButton_11.TextSize = 14.000
-TextButton_11.TextWrapped = true
-
-UICorner_14.Parent = TextButton_11
-
-TextLabel_10.Parent = Settings
-TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_10.BackgroundTransparency = 1.000
-TextLabel_10.Position = UDim2.new(-0.00128304039, 0, 0.632350206, 0)
-TextLabel_10.Size = UDim2.new(0, 750, 0, 20)
-TextLabel_10.Font = Enum.Font.Ubuntu
-TextLabel_10.Text = "(useful for locating and reporting issues!)"
-TextLabel_10.TextColor3 = Color3.fromRGB(153, 170, 181)
-TextLabel_10.TextScaled = true
-TextLabel_10.TextSize = 14.000
-TextLabel_10.TextWrapped = true
-
-TextLabel_11.Parent = Settings
-TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_11.BackgroundTransparency = 1.000
-TextLabel_11.Position = UDim2.new(-0.00128304039, 0, 0, 0)
-TextLabel_11.Size = UDim2.new(0, 750, 0, 62)
-TextLabel_11.Font = Enum.Font.Ubuntu
-TextLabel_11.Text = "These settings have only been tested and confirmed working on exploits compatible with the Synapse X Filesystem API! Changes may require reinjection to be applied."
-TextLabel_11.TextColor3 = Color3.fromRGB(153, 170, 181)
-TextLabel_11.TextScaled = true
-TextLabel_11.TextSize = 14.000
-TextLabel_11.TextWrapped = true
-
 -- Scripts:
 
-local function IHGGQL_fake_script() -- ScreenGui.LocalScript 
+local function THYQ_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local gui = script.Parent
@@ -454,8 +269,8 @@ local function IHGGQL_fake_script() -- ScreenGui.LocalScript
 	script.Parent.MainMenu.Visible = true
 	script.Parent.MainMenu.Scripts.Visible = true
 end
-coroutine.wrap(IHGGQL_fake_script)()
-local function BJXKUSR_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(THYQ_fake_script)()
+local function TTUMUL_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -463,61 +278,12 @@ local function BJXKUSR_fake_script() -- TextButton.LocalScript
 		script.Parent.Parent.Settings.Visible = true
 	end)
 end
-coroutine.wrap(BJXKUSR_fake_script)()
-local function HMQRKA_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(TTUMUL_fake_script)()
+local function KPQY_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.ScreenGui:Destroy()
 	end)
 end
-coroutine.wrap(HMQRKA_fake_script)()
-local function JSWM_fake_script() -- TextButton_6.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_6)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		
-	end)
-end
-coroutine.wrap(JSWM_fake_script)()
-local function EAVVXSI_fake_script() -- TextButton_7.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_7)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		
-	end)
-end
-coroutine.wrap(EAVVXSI_fake_script)()
-local function VWBK_fake_script() -- TextButton_8.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_8)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		
-	end)
-end
-coroutine.wrap(VWBK_fake_script)()
-local function ZWHVTFF_fake_script() -- TextButton_9.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_9)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		
-	end)
-end
-coroutine.wrap(ZWHVTFF_fake_script)()
-local function XGEJJ_fake_script() -- TextButton_10.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_10)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		
-	end)
-end
-coroutine.wrap(XGEJJ_fake_script)()
-local function QBYM_fake_script() -- TextButton_11.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_11)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.Scripts.Visible = true
-		script.Parent.Parent.Parent.Settings.Visible = false
-	end)
-end
-coroutine.wrap(QBYM_fake_script)()
+coroutine.wrap(KPQY_fake_script)()
