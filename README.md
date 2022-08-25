@@ -13,8 +13,8 @@ If there's any scripts you want added, feel free to send me a DM on the linked t
 
 ## Recommended (ensures you always have the latest version)
 
-In your executor of choice's code editor, paste the loadstring (`loadstring(game:HttpGet("https://raw.githubusercontent.com/RooRay/Script-Launcher/main/main.lua"))();`) and execute/run it!
+In your executor of choice's code editor, paste the loadstring (`loadstring(game:HttpGet("https://raw.githubusercontent.com/RooRay/Script-Launcher/stable/src/main.lua"))();`) and execute/run it!
 
 ## Alternative method (requires you to manually replace the code when there's an update)
 
-Paste the contents of the `main.lua` ([AKA this](https://github.com/RooRay/Script-Launcher/blob/stable/main.lua)) file in this repository into your executor of choice's editor and execute/run it!
+Paste the contents of the `main.lua` ([AKA this](https://github.com/RooRay/Script-Launcher/blob/stable/src/main.lua)) file in this repository into your executor of choice's editor and execute/run it!
