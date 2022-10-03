@@ -1,5 +1,4 @@
-# RooRay's Script Launcher
-
+<img src="https://socialify.git.ci/RooRay/Script-Launcher/image?description=1&language=1&name=1&owner=1&pattern=Floating%20Cogs&theme=Dark" alt="Script-Launcher" width="640" height="320" />
 This is an exploit script launcher (sometimes called a "Script Hub") for Roblox! The code is completely open (as it contains a lot of scripts from other people) and is completely unobfuscated/unencrypted.
 
 # Installation
